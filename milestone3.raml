@@ -1,0 +1,69 @@
+#%RAML 1.0
+types:
+  Integration-MajorAsgn-Harichandana:
+    items:
+      properties:
+        id:
+          example: 1
+          type: number
+          format: int
+        name:
+          example: Karthik Kocchar
+          type: string
+        email:
+          example: karthikkocchar@rutherford.io
+          type: string
+        gender:
+          example: female
+          type: string
+        status:
+          example: inactive
+          type: string
+  Integration3-MajorAsgn-Harichandana:
+    properties:
+      Name:
+        example: Gorakhanatha Chaturvedi
+        type: string
+      Status:
+        example: active
+        type: string
+      Gender:
+        example: female
+        type: string
+  Integration2-HarichandanaB:
+    type: object
+title: /milestone1
+/milestone1:
+  head:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: Integration-MajorAsgn-Harichandana
+            items:
+              type: object
+  get:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: Integration-MajorAsgn-Harichandana
+            items:
+              type: object
+/milestone3:
+  get:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: Integration3-MajorAsgn-Harichandana
+  head:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: Integration3-MajorAsgn-Harichandana
+/milestone2:
+  post:
+    responses:
+      "201": {}

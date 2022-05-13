@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "4187f0cc-9096-4817-b8c0-ed174f8aa535",
+		"name": "API-Collection-HarichandanaBhaskar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetRequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PostRequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PutRequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
