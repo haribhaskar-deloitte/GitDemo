@@ -1,0 +1,37 @@
+#%RAML 1.0
+title: Demo
+
+description: This is an online learning marketplace is a web application which provides multiple courses on different domains/technologies.
+
+version: v1
+
+protocols:
+  - HTTP
+  - HTTPS
+
+/userdetails:
+  displayName: User Details
+  description: Fetching User Details
+  get:
+    queryParameters:
+      displayname: string
+      firstname: string
+      lastname: string
+      bio: string
+      experience: string
+      expertise: 
+        enum:
+          - IT
+          - HR
+      usertype:
+        enum:
+          - Professional
+          - Student
+      role: string
+    responses:
+      200:
+        body:
+          application/json:
+            
+
+    
